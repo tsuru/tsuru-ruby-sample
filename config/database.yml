@@ -42,8 +42,8 @@ test:
 production:
   adapter: mysql
   encoding: utf8
-  database: blog_development
+  database: <%=ENV["MYSQL_DATABASE_NAME"]%>
   pool: 5
-  username: root
-  password:
+  username: <%=ENV["MYSQL_USER"]%>
+  password: <%=ENV["MYSQL_PASSWORD"]%>
   socket: /tmp/mysql.sock
