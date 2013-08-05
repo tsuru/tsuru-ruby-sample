@@ -1,2 +1,2 @@
 *.sw[a-z]
-log/development.log
+log/*
