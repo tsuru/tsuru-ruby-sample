@@ -42,8 +42,7 @@ test:
 production:
   adapter: mysql
   encoding: utf8
-  database: <%=ENV["MYSQL_DATABASE_NAME"]%>
+  database: <%= ENV["MYSQL_DATABASE_NAME"] %>
   pool: 5
-  username: <%=ENV["MYSQL_USER"]%>
-  password: <%=ENV["MYSQL_PASSWORD"]%>
-  socket: /tmp/mysql.sock
+  username: <%= ENV["MYSQL_USER"] %>
+  password: <%= ENV["MYSQL_PASSWORD"] %>
