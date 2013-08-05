@@ -1,0 +1,3 @@
+hooks:
+  pos-restart:
+    - bundle exec rake db:migrate
